@@ -3,64 +3,393 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: #999999;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 820px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1add31;
+  transition: 0.7s;
+}
+
+.nav-link {
+  color: white;
+}
+
+.logo {
+}
+
+header {
+  width: 820px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-left,
+.header-right {
+  width: 407px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 5em;
+  word-spacing: 999px;
+  text-align: center;
+}
+
+.header-button {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  background: white;
+  border: 1px solid black;
+  padding: 3px 42px;
+}
+
+button:hover {
+  background-color: #1add31;
+  transition: 0.7s;
+}
+
+.top {
+  border-top: 1px solid black;
+  width: 820px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+.top-left,
+.top-right {
+  width: 402px;
+}
+
+.middle-img {
+  width: 820px;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+.bottom {
+  border-bottom: 1px solid black;
+  width: 820px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+  width: 270px;
+}
+
+.contact {
+  width: 820px;
+  padding-top: 30px;
+}
+
+address {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.phone-number {
+  color: black;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.email {
+  color: black;
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin: 0 auto;
+  width: 820px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+/* Services page styles */
+
+.services-header-img {
+  margin-top: 45px;
+  width: 820px;
+}
+
+.services-intro {
+  width: 820px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.services-h2 {
+  font-size: 1.5em;
+}
+
+.services-content {
+  width: 820px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  border: 1px solid black;
+  background: #ececec;
+  width: 48%;
+  margin-bottom: 30px;
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-button {
+  border-radius: 5px;
+  border: 1px solid black;
+  background: white;
+  width: 160px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.8em;
+  padding: 0.7em;
+  margin-top: 1.2em;
+}
+
+.services-facts {
+  width: 820px;
+  padding-top: 30px;
+  margin-bottom: 60px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+
+  margin: 1.2em;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+.services-info-img {
+  width: 48%;
+}
