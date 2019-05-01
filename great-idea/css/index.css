@@ -323,6 +323,7 @@ footer {
 .services-header-img {
   margin-top: 45px;
   width: 820px;
+  padding-bottom: 30px;
 }
 
 .services-intro {
@@ -392,4 +393,65 @@ li {
 
 .services-info-img {
   width: 48%;
+}
+
+/* About page styles */
+
+.team-photo {
+  width: 820px;
+  padding-bottom: 30px;
+}
+
+.about-h2 {
+  font-size: 1.2em;
+}
+
+.about-intro {
+  width: 820px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.team-profiles {
+  width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.profile-photo-founder {
+  width: 200px;
+  height: 200px;
+}
+
+.profile {
+  width: 45%;
+  background: #ececec;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.profile-detail {
+  margin: 1.5em;
+}
+
+.profile-founder {
+  background: #ececec;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.founder-details {
+  margin: 1.5em;
+}
+
+.profile-founder h2,
+.profile-founder p {
+  font-size: 1.2em;
 }
